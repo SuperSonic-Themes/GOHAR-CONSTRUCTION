@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Space Grotesk', sans-serif;
+}
+html{
+    scroll-behavior: smooth;   
+}
+
+nav{
+    margin-right: 70px;
+}
+nav a{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 3px 1px;
+    font-weight: bold;
+}
+
+.active{
+    border-color: orange;
+}
+
+nav a:hover{
+    border-color: orange;
+
+}
+
+ .text h3{
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 3px black;
+    position: relative;
+ }
+
+ .text h3::before{
+    content: 'SINCE 2003';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+    transition: 1s ease-in-out;
+ }
+
+ .text h3:hover::before{
+    width: 100%;
+ }
+ #progress{
+    /* background-color: green; */
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    cursor: pointer;
+}
+
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color:#ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #001a2e;
+}
+
+
+.mystyle{
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider1{
+    background-image: url('./images/Slider2-01.jpg');
+    object-fit: cover;
+    background-size: 43rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* height: 350px; */
+}
+
+.slider2{
+    background-image: url('./images/Slider2-02.jpg');
+    object-fit: cover;
+    background-size: 43rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* height: 350px; */
+}
+
+.slider3{
+    background-image: url('./images/Slider2-03.jpg');
+    object-fit: cover;
+    background-size: 43rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* height: 350px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 576px) {
+    .slider1,
+    .slider2,
+    .slider3 {
+        background-size: 100%; /* Adjust as needed for small screens */
+    /* } */
+/* } */
+
+/* Medium screens (md) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .slider1,
+    .slider2,
+    .slider3 {
+    object-fit: cover;
+    background-size: 55rem;
+    background-repeat: no-repeat;
+    background-position: bottom; /* Adjust as needed for medium screens */
+    }
+}
+
+/* Large screens (lg) */
+@media (min-width: 993px) {
+    .slider1,
+    .slider2,
+    .slider3 {
+        object-fit: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        /* background-position: bottom; Adjust as needed for medium screens */
+          }
+}
